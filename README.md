@@ -7,8 +7,35 @@ Ce dêpot contient toutes les étapes pour créer un commit depuis le terminal a
 
     - Création d'un dépôt ainsi que d'un commit :
     
-          git init
-          git add README.md
-          git commit -m "first commit"
-          git remote add origin https://github.com/Banb4n/QueteGitWCS.git
-          git push -u origin master
+          $ mkdir ../monprojet
+          $ cd ../monprojet
+          $ git init 
+          $ touch Readme.txt
+          $ git status 
+          $ git add Readme.txt
+          $ git commit -m "Ajout Lisez-moi.txt"
+          $ git remove add origin https://github.com/profil/monprojet.git
+          $ git remove -v
+          $ git push 
+    .      
+    
+    - Création du commit uniquement : 
+    
+          $ cd ../votreDossier
+          $ git init
+          
+          // vérification du contenu du dossier 
+          $ git status 
+          
+          // ligne suivante pour ajouter un fichier 
+          $ git add monfichier.js
+          
+          // création du commit 
+          $ git commit -m "Ajoute monfichier.js."
+          
+          // connection au depot 
+          $ git remove add origin https://github.com/profil/depot
+          $ git remove -v
+          
+          // envoi sur le depot 
+          $ git push 
