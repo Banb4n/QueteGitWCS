@@ -10,32 +10,28 @@ Ce dêpot contient toutes les étapes pour créer un commit depuis le terminal a
           $ mkdir ../monprojet
           $ cd ../monprojet
           $ git init 
-          $ touch Readme.txt
+          $ touch Readme.md
           $ git status 
-          $ git add Readme.txt
-          $ git commit -m "Ajout Lisez-moi.txt"
-          $ git remove add origin https://github.com/profil/monprojet.git
-          $ git remove -v
-          $ git push 
+          $ git add Readme.md
+          $ git commit -m "Ajout Lisez-moi.md"
+          $ git remote add origin https://github.com/profil/monprojet.git
+          $ git push -u origin master
     .      
     
     - Création du commit uniquement : 
     
           $ cd ../votreDossier
-          $ git init
           
-          // vérification du contenu du dossier 
           $ git status 
           
-          // ligne suivante pour ajouter un fichier 
+          // Pour un fichier
           $ git add monfichier.js
+          
+          // Pour tous les fichier
+          $ git add * 
           
           // création du commit 
           $ git commit -m "Ajoute monfichier.js."
-          
-          // connection au depot 
-          $ git remove add origin https://github.com/profil/depot
-          $ git remove -v
           
           // envoi sur le depot 
           $ git push 
